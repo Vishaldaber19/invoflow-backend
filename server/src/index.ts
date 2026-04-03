@@ -14,12 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
-app.use(cors({
-  origin: [
-    'http://localhost:5173',
-    'https://invoflow-backend.onrender.com',
-  ],
-}));
+app.use(cors());
 app.use(express.json());
 
 // Routes
